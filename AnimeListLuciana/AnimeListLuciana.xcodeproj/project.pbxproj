@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D8E3FF5FD5DFA63409A320B /* Pods_AnimeListLuciana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD3D2355743431A8753E2BB /* Pods_AnimeListLuciana.framework */; };
+		BB54F7D82AE41E8A009EE444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7D72AE41E8A009EE444 /* AppDelegate.swift */; };
+		BB54F7DA2AE41E8A009EE444 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7D92AE41E8A009EE444 /* SceneDelegate.swift */; };
+		BB54F7DC2AE41E8A009EE444 /* MangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7DB2AE41E8A009EE444 /* MangaViewController.swift */; };
+		BB54F7DF2AE41E8A009EE444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB54F7DD2AE41E8A009EE444 /* Main.storyboard */; };
+		BB54F7E12AE41E8D009EE444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB54F7E02AE41E8D009EE444 /* Assets.xcassets */; };
+		BB54F7E42AE41E8D009EE444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB54F7E22AE41E8D009EE444 /* LaunchScreen.storyboard */; };
+		BB54F7F02AE423F1009EE444 /* MangaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7EF2AE423F1009EE444 /* MangaResponse.swift */; };
+		BB54F7F22AE4246C009EE444 /* MangaDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7F12AE4246C009EE444 /* MangaDetailResponse.swift */; };
+		BB54F7F42AE42482009EE444 /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7F32AE42482009EE444 /* ImagesResponse.swift */; };
+		BB54F7F62AE42496009EE444 /* JpgResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7F52AE42496009EE444 /* JpgResponse.swift */; };
+		BB54F7F82AE424A8009EE444 /* PaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7F72AE424A8009EE444 /* PaginationResponse.swift */; };
+		BB54F7FC2AE4484A009EE444 /* NewsManga.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7FB2AE4484A009EE444 /* NewsManga.swift */; };
+		BB54F7FF2AE44907009EE444 /* MangaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F7FE2AE44907009EE444 /* MangaApi.swift */; };
+		BB54F8012AE44A81009EE444 /* GenericManga.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8002AE44A81009EE444 /* GenericManga.swift */; };
+		BB54F8032AE451EE009EE444 /* MangaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8022AE451EE009EE444 /* MangaViewModel.swift */; };
+		BB54F8062AE45342009EE444 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8052AE45342009EE444 /* Observable.swift */; };
+		BB54F8092AE45DE3009EE444 /* MangaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8082AE45DE3009EE444 /* MangaModel.swift */; };
+		BB54F80B2AE45E2C009EE444 /* MangaDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F80A2AE45E2C009EE444 /* MangaDetailModel.swift */; };
+		BB54F80D2AE45E4F009EE444 /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F80C2AE45E4F009EE444 /* ImagesModel.swift */; };
+		BB54F80F2AE45E65009EE444 /* JpgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F80E2AE45E65009EE444 /* JpgModel.swift */; };
+		BB54F8112AE45E87009EE444 /* PaginationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8102AE45E87009EE444 /* PaginationModel.swift */; };
+		BB54F8152AE46CCE009EE444 /* MangaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8132AE46CCE009EE444 /* MangaTableViewCell.swift */; };
+		BB54F8162AE46CCE009EE444 /* MangaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB54F8142AE46CCE009EE444 /* MangaTableViewCell.xib */; };
+		BB54F8192AE4755D009EE444 /* MangaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8182AE4755D009EE444 /* MangaDetailView.swift */; };
+		BB54F81B2AE47747009EE444 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F81A2AE47747009EE444 /* ViewCodable.swift */; };
+		BB54F8232AE48C29009EE444 /* MangaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8222AE48C29009EE444 /* MangaDetailViewController.swift */; };
+		BB54F8262AE49D58009EE444 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8252AE49D58009EE444 /* EndView.swift */; };
+		BB54F8282AE49F18009EE444 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54F8272AE49F18009EE444 /* EndViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04CEC594537F7BF6F2E93996 /* Pods-AnimeListLuciana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeListLuciana.release.xcconfig"; path = "Target Support Files/Pods-AnimeListLuciana/Pods-AnimeListLuciana.release.xcconfig"; sourceTree = "<group>"; };
+		1CD3D2355743431A8753E2BB /* Pods_AnimeListLuciana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeListLuciana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C687109AAB20DA64993BE /* Pods-AnimeListLuciana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeListLuciana.debug.xcconfig"; path = "Target Support Files/Pods-AnimeListLuciana/Pods-AnimeListLuciana.debug.xcconfig"; sourceTree = "<group>"; };
+		BB54F7D42AE41E8A009EE444 /* AnimeListLuciana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeListLuciana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB54F7D72AE41E8A009EE444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB54F7D92AE41E8A009EE444 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB54F7DB2AE41E8A009EE444 /* MangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaViewController.swift; sourceTree = "<group>"; };
+		BB54F7DE2AE41E8A009EE444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB54F7E02AE41E8D009EE444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB54F7E32AE41E8D009EE444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB54F7E52AE41E8D009EE444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB54F7EF2AE423F1009EE444 /* MangaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaResponse.swift; sourceTree = "<group>"; };
+		BB54F7F12AE4246C009EE444 /* MangaDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailResponse.swift; sourceTree = "<group>"; };
+		BB54F7F32AE42482009EE444 /* ImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
+		BB54F7F52AE42496009EE444 /* JpgResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JpgResponse.swift; sourceTree = "<group>"; };
+		BB54F7F72AE424A8009EE444 /* PaginationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationResponse.swift; sourceTree = "<group>"; };
+		BB54F7FB2AE4484A009EE444 /* NewsManga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManga.swift; sourceTree = "<group>"; };
+		BB54F7FE2AE44907009EE444 /* MangaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaApi.swift; sourceTree = "<group>"; };
+		BB54F8002AE44A81009EE444 /* GenericManga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericManga.swift; sourceTree = "<group>"; };
+		BB54F8022AE451EE009EE444 /* MangaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaViewModel.swift; sourceTree = "<group>"; };
+		BB54F8052AE45342009EE444 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BB54F8082AE45DE3009EE444 /* MangaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaModel.swift; sourceTree = "<group>"; };
+		BB54F80A2AE45E2C009EE444 /* MangaDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailModel.swift; sourceTree = "<group>"; };
+		BB54F80C2AE45E4F009EE444 /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		BB54F80E2AE45E65009EE444 /* JpgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JpgModel.swift; sourceTree = "<group>"; };
+		BB54F8102AE45E87009EE444 /* PaginationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationModel.swift; sourceTree = "<group>"; };
+		BB54F8132AE46CCE009EE444 /* MangaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaTableViewCell.swift; sourceTree = "<group>"; };
+		BB54F8142AE46CCE009EE444 /* MangaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MangaTableViewCell.xib; sourceTree = "<group>"; };
+		BB54F8182AE4755D009EE444 /* MangaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailView.swift; sourceTree = "<group>"; };
+		BB54F81A2AE47747009EE444 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		BB54F8222AE48C29009EE444 /* MangaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailViewController.swift; sourceTree = "<group>"; };
+		BB54F8252AE49D58009EE444 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		BB54F8272AE49F18009EE444 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB54F7D12AE41E8A009EE444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8E3FF5FD5DFA63409A320B /* Pods_AnimeListLuciana.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB6CD4D94E00C7EF57D5FA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				499C687109AAB20DA64993BE /* Pods-AnimeListLuciana.debug.xcconfig */,
+				04CEC594537F7BF6F2E93996 /* Pods-AnimeListLuciana.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94BF3D32EB6C1276478C1868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3D2355743431A8753E2BB /* Pods_AnimeListLuciana.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB54F7CB2AE41E8A009EE444 = {
+			isa = PBXGroup;
+			children = (
+				BB54F7D62AE41E8A009EE444 /* AnimeListLuciana */,
+				BB54F7D52AE41E8A009EE444 /* Products */,
+				5DB6CD4D94E00C7EF57D5FA3 /* Pods */,
+				94BF3D32EB6C1276478C1868 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB54F7D52AE41E8A009EE444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F7D42AE41E8A009EE444 /* AnimeListLuciana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB54F7D62AE41E8A009EE444 /* AnimeListLuciana */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8042AE45330009EE444 /* Commons */,
+				BB54F7D72AE41E8A009EE444 /* AppDelegate.swift */,
+				BB54F7D92AE41E8A009EE444 /* SceneDelegate.swift */,
+				BB54F7EB2AE42307009EE444 /* DataProviders */,
+				BB54F7EC2AE4231B009EE444 /* Models */,
+				BB54F7ED2AE42328009EE444 /* Views */,
+				BB54F7EE2AE42332009EE444 /* ViewModels */,
+				BB54F7E02AE41E8D009EE444 /* Assets.xcassets */,
+				BB54F7E22AE41E8D009EE444 /* LaunchScreen.storyboard */,
+				BB54F7E52AE41E8D009EE444 /* Info.plist */,
+			);
+			path = AnimeListLuciana;
+			sourceTree = "<group>";
+		};
+		BB54F7EB2AE42307009EE444 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8072AE45D5E009EE444 /* Response */,
+				BB54F7F92AE447C0009EE444 /* NetworkRepository */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		BB54F7EC2AE4231B009EE444 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8082AE45DE3009EE444 /* MangaModel.swift */,
+				BB54F80A2AE45E2C009EE444 /* MangaDetailModel.swift */,
+				BB54F80C2AE45E4F009EE444 /* ImagesModel.swift */,
+				BB54F80E2AE45E65009EE444 /* JpgModel.swift */,
+				BB54F8102AE45E87009EE444 /* PaginationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB54F7ED2AE42328009EE444 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8242AE49D41009EE444 /* End */,
+				BB54F8172AE47538009EE444 /* Detail */,
+				BB54F8122AE46C52009EE444 /* Cell */,
+				BB54F7DB2AE41E8A009EE444 /* MangaViewController.swift */,
+				BB54F7DD2AE41E8A009EE444 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB54F7EE2AE42332009EE444 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8022AE451EE009EE444 /* MangaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB54F7F92AE447C0009EE444 /* NetworkRepository */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F7FA2AE4481D009EE444 /* Manga */,
+				BB54F7FD2AE448F1009EE444 /* Apis */,
+			);
+			path = NetworkRepository;
+			sourceTree = "<group>";
+		};
+		BB54F7FA2AE4481D009EE444 /* Manga */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F7FB2AE4484A009EE444 /* NewsManga.swift */,
+				BB54F8002AE44A81009EE444 /* GenericManga.swift */,
+			);
+			path = Manga;
+			sourceTree = "<group>";
+		};
+		BB54F7FD2AE448F1009EE444 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F7FE2AE44907009EE444 /* MangaApi.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		BB54F8042AE45330009EE444 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8052AE45342009EE444 /* Observable.swift */,
+				BB54F81A2AE47747009EE444 /* ViewCodable.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BB54F8072AE45D5E009EE444 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F7EF2AE423F1009EE444 /* MangaResponse.swift */,
+				BB54F7F12AE4246C009EE444 /* MangaDetailResponse.swift */,
+				BB54F7F32AE42482009EE444 /* ImagesResponse.swift */,
+				BB54F7F52AE42496009EE444 /* JpgResponse.swift */,
+				BB54F7F72AE424A8009EE444 /* PaginationResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		BB54F8122AE46C52009EE444 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8132AE46CCE009EE444 /* MangaTableViewCell.swift */,
+				BB54F8142AE46CCE009EE444 /* MangaTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BB54F8172AE47538009EE444 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8182AE4755D009EE444 /* MangaDetailView.swift */,
+				BB54F8222AE48C29009EE444 /* MangaDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BB54F8242AE49D41009EE444 /* End */ = {
+			isa = PBXGroup;
+			children = (
+				BB54F8252AE49D58009EE444 /* EndView.swift */,
+				BB54F8272AE49F18009EE444 /* EndViewController.swift */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB54F7D32AE41E8A009EE444 /* AnimeListLuciana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB54F7E82AE41E8D009EE444 /* Build configuration list for PBXNativeTarget "AnimeListLuciana" */;
+			buildPhases = (
+				62DA04B92A4D2C4A83AFC7FA /* [CP] Check Pods Manifest.lock */,
+				BB54F7D02AE41E8A009EE444 /* Sources */,
+				BB54F7D12AE41E8A009EE444 /* Frameworks */,
+				BB54F7D22AE41E8A009EE444 /* Resources */,
+				255F3C88648E07672A130969 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimeListLuciana;
+			productName = AnimeListLuciana;
+			productReference = BB54F7D42AE41E8A009EE444 /* AnimeListLuciana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB54F7CC2AE41E8A009EE444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BB54F7D32AE41E8A009EE444 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = BB54F7CF2AE41E8A009EE444 /* Build configuration list for PBXProject "AnimeListLuciana" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB54F7CB2AE41E8A009EE444;
+			productRefGroup = BB54F7D52AE41E8A009EE444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB54F7D32AE41E8A009EE444 /* AnimeListLuciana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB54F7D22AE41E8A009EE444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB54F7E42AE41E8D009EE444 /* LaunchScreen.storyboard in Resources */,
+				BB54F7E12AE41E8D009EE444 /* Assets.xcassets in Resources */,
+				BB54F8162AE46CCE009EE444 /* MangaTableViewCell.xib in Resources */,
+				BB54F7DF2AE41E8A009EE444 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		255F3C88648E07672A130969 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeListLuciana/Pods-AnimeListLuciana-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeListLuciana/Pods-AnimeListLuciana-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeListLuciana/Pods-AnimeListLuciana-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DA04B92A4D2C4A83AFC7FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeListLuciana-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB54F7D02AE41E8A009EE444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB54F8282AE49F18009EE444 /* EndViewController.swift in Sources */,
+				BB54F8062AE45342009EE444 /* Observable.swift in Sources */,
+				BB54F7F02AE423F1009EE444 /* MangaResponse.swift in Sources */,
+				BB54F80F2AE45E65009EE444 /* JpgModel.swift in Sources */,
+				BB54F7FF2AE44907009EE444 /* MangaApi.swift in Sources */,
+				BB54F80D2AE45E4F009EE444 /* ImagesModel.swift in Sources */,
+				BB54F7F42AE42482009EE444 /* ImagesResponse.swift in Sources */,
+				BB54F7DC2AE41E8A009EE444 /* MangaViewController.swift in Sources */,
+				BB54F8262AE49D58009EE444 /* EndView.swift in Sources */,
+				BB54F8012AE44A81009EE444 /* GenericManga.swift in Sources */,
+				BB54F8232AE48C29009EE444 /* MangaDetailViewController.swift in Sources */,
+				BB54F7F22AE4246C009EE444 /* MangaDetailResponse.swift in Sources */,
+				BB54F7D82AE41E8A009EE444 /* AppDelegate.swift in Sources */,
+				BB54F7FC2AE4484A009EE444 /* NewsManga.swift in Sources */,
+				BB54F81B2AE47747009EE444 /* ViewCodable.swift in Sources */,
+				BB54F7F82AE424A8009EE444 /* PaginationResponse.swift in Sources */,
+				BB54F8092AE45DE3009EE444 /* MangaModel.swift in Sources */,
+				BB54F8112AE45E87009EE444 /* PaginationModel.swift in Sources */,
+				BB54F7DA2AE41E8A009EE444 /* SceneDelegate.swift in Sources */,
+				BB54F80B2AE45E2C009EE444 /* MangaDetailModel.swift in Sources */,
+				BB54F7F62AE42496009EE444 /* JpgResponse.swift in Sources */,
+				BB54F8152AE46CCE009EE444 /* MangaTableViewCell.swift in Sources */,
+				BB54F8192AE4755D009EE444 /* MangaDetailView.swift in Sources */,
+				BB54F8032AE451EE009EE444 /* MangaViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB54F7DD2AE41E8A009EE444 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB54F7DE2AE41E8A009EE444 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB54F7E22AE41E8D009EE444 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB54F7E32AE41E8D009EE444 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB54F7E62AE41E8D009EE444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB54F7E72AE41E8D009EE444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB54F7E92AE41E8D009EE444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499C687109AAB20DA64993BE /* Pods-AnimeListLuciana.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeListLuciana/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dio.projetos.finais.AnimeListLuciana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB54F7EA2AE41E8D009EE444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CEC594537F7BF6F2E93996 /* Pods-AnimeListLuciana.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeListLuciana/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dio.projetos.finais.AnimeListLuciana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB54F7CF2AE41E8A009EE444 /* Build configuration list for PBXProject "AnimeListLuciana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB54F7E62AE41E8D009EE444 /* Debug */,
+				BB54F7E72AE41E8D009EE444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB54F7E82AE41E8D009EE444 /* Build configuration list for PBXNativeTarget "AnimeListLuciana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB54F7E92AE41E8D009EE444 /* Debug */,
+				BB54F7EA2AE41E8D009EE444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB54F7CC2AE41E8A009EE444 /* Project object */;
+}
